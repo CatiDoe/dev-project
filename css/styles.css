@@ -1,0 +1,178 @@
+/* ----------------- ESTILOS ------------------ */
+/* TIPOGRAFÍA google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700;800&display=swap');
+
+
+:root {
+--header-height: 3.5rem;
+
+/* COLORES */
+--title-color: #F2BD57;
+--primary-color: #000000;
+--container-color: #FFFFFF;
+--secondary-color: #8ECAD7;
+--primary-color-alt: #FDF2DE;
+--text-body: #848383;
+--text-color-light: #e0dfda;
+
+/* ESTILOS DE TIPOGRAFÍA */
+--body-font: 'Epilogue', sans-serif;
+--biggest-font: 2.25rem;
+--h1-size: 1.5rem;
+--h2-size: 1.25rem;
+--h3-size: 1rem;
+--normal-font: 0.938rem;
+--smallest-font: 0.813rem;
+
+/* PESOS DE TIPOGRAFÍA */
+--font-bold: 700;
+--font-regular: 400;
+
+}
+
+@media screen and (min-width: 968px) {
+    
+    :root {
+        --biggest-font: 3.5rem;
+        --h1-size: 2.25rem;
+        --h2-size: 1.5rem;
+        --h3-size: 1.25rem;
+        --normal-font: 1rem;
+        --smallest-font: .875rem;
+    }
+}
+
+/* ----------------- ESTILOS GLOBALES ------------------ */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font);
+    font-weight: var(--font-regular);
+    display: flex;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+h1, h2, h3{
+    color: var(--primary-color);
+    font-weight: var(--font-bold);
+}
+
+p{
+    color: var(--text-body);
+    font-weight: var(--font-regular);
+}
+
+button{
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+
+/* ------------------ HEADER Y MENÚ  ----------------- */
+/* HEADER */
+.header-home{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    align-items: center;
+    background-color: #848383;
+}
+
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    width: 30%;
+}
+
+.nav-acciones{
+    display: inline-flex;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu{
+        position: fixed;
+        background-color: var(--primary-color-alt);
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+    }
+}
+
+.nav-categorias{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 3.5rem;
+    padding-top: 9rem;
+}
+
+.nav-tienda{
+    display: flex;
+    text-align: center;
+    column-gap: 0.5rem;
+}
+
+.nav-link{
+    color: var(--primary-color);
+    font-size: var(--h2-size);
+    font-weight: var(--font-regular);
+    transition: .4s;
+}
+.nav-link:hover{
+    font-weight: var(--font-bold);
+}
+
+.nav-cerrar{
+    font-size: var(--biggest-font);
+    color: var(--title-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5rem;
+    cursor: pointer;
+}
+
+.show-menu{
+    right: 0;
+}
