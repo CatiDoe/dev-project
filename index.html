@@ -129,10 +129,12 @@
         <!-------- FIN BANNER HOME --------->
 
         <!-------- QUE NOS HACE ESPECIALES --------->
-        <section class="especial section container" id="special">
-            <div class="especial-contenido">
+        <section class="especial section" id="special">
+            <div class="especial-contenido container">
 
+                
                 <!-- TEXTOS DEL BANNER -->
+                <img src="imagenes/extras/star-yellow.png" class="star-yellow__special">
                 <div class="especial-texto">
                     <h1 class="bestcereal-title">
                         ¿Qué nos hace la Mejor Tienda de Cereal existente?
@@ -150,10 +152,12 @@
                     </button>
                 </div>
 
+                <img src="imagenes/extras/star-yellow.png" class="star-yellow__special2">
+
                 <div class="especial-bullet">
                     <div class="bullet-group__first">
                         <div class="bullet-single">
-                            <i class='bx bx-credit-card'></i>
+                            <img src="imagenes/icons/bestcereal-1.png" class="bullet-icons">
                             <hgroup>
                                 <h3 class="bullet-titles">
                                     Fácil de pedir
@@ -164,7 +168,7 @@
                             </hgroup>
                         </div>
                         <div class="bullet-single">
-                            <i class='bx bx-run'></i>
+                            <img src="imagenes/icons/bestcereal-2.png" class="bullet-icons">
                             <hgroup>
                                 <h3 class="bullet-titles">
                                     Envío fugaz
@@ -175,43 +179,52 @@
                             </hgroup>
                         </div>
                         <div class="bullet-single">
-                            <h3 class="bullet-titles">
-                                Mejor calidad
-                            </h3>
-                            <p class="bullet-texts">
-                                Lorem Ipsum is simply dummy text of the printing
-                            </p>
-                            <i class='bx bx-crown' ></i>
+                            <img src="imagenes/icons/bestcereal-3.png" class="bullet-icons">
+                            <hgroup>
+                                <h3 class="bullet-titles">
+                                    Mejor calidad
+                                </h3>
+                                <p class="bullet-texts">
+                                    Lorem Ipsum is simply dummy text of the printing
+                                </p>
+                            </hgroup>
                         </div>
                         
                     </div>
                     <div class="bullet-group__second">
                         <div class="bullet-single">
-                            <h3 class="bullet-titles">
-                                A la puerta de tu casa
-                            </h3>
-                            <p class="bullet-texts">
-                                Lorem Ipsum is simply dummy text of the printing
-                            </p>
-                            <i class='bx bx-home'></i>
+                            <img src="imagenes/icons/bestcereal-4.png" class="bullet-icons">
+                            <hgroup>
+                                <h3 class="bullet-titles">
+                                    A la puerta de tu casa
+                                </h3>
+                                <p class="bullet-texts">
+                                    Lorem Ipsum is simply dummy text of the printing
+                                </p>
+                            </hgroup>
                         </div>
                         <div class="bullet-single">
-                            <h3 class="bullet-titles">
-                                Abiertos 24/7
-                            </h3>
-                            <p class="bullet-texts">
-                                Lorem Ipsum is simply dummy text of the printing
-                            </p>
-                            <i class='bx bx-timer'></i>
+                            <img src="imagenes/icons/bestcereal-5.png" class="bullet-icons">
+                            <hgroup>
+                                <h3 class="bullet-titles">
+                                    Abiertos 24/7
+                                </h3>
+                                <p class="bullet-texts">
+                                    Lorem Ipsum is simply dummy text of the printing
+                                </p>
+                            </hgroup>
                         </div>
                         <div class="bullet-single">
-                            <h3 class="bullet-titles">
-                                Grandes descuentos
-                            </h3>
-                            <p class="bullet-texts">
-                                Lorem Ipsum is simply dummy text of the printing
-                            </p>
-                            <i class='bx bx-party'></i>
+                            <img src="imagenes/icons/bestcereal-6.png" class="bullet-icons">
+
+                            <hgroup>
+                                <h3 class="bullet-titles">
+                                    Grandes descuentos
+                                </h3>
+                                <p class="bullet-texts">
+                                    Lorem Ipsum is simply dummy text of the printing
+                                </p>
+                            </hgroup>
                         </div>
                         
                     </div>
@@ -220,12 +233,426 @@
             </div>
 
         </section>
+        <!-------- FIN QUE NOS HACE ESPECIALES --------->
 
+        <!-------- PRODUCTOS --------->
+        <section class="productos section" id="products">
+            <div class="productos-contenido container">
+                
+                <!-- TEXTOS -->
+                <div class="productos--textos">
+                    <h1 class="bestcereal-title">
+                        En gustos de cereal no hay nada escrito...
+                    </h1>
+                    <p class="bestcereal-description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...
+                    </p>
+                </div>
+                
+                <!-- CATEGORÍAS -->
+                <div class="productos--categorias">
+                    <ul class="categorias-filtros">
+                        <li class="categorias-single active-product" data-filter=".frutales">Frutales</li>
+                        <li class="categorias-single" data-filter=".integrales">Integrales</li>
+                        <li class="categorias-single" data-filter=".chocolatados">Chocolatados</li>
+                        <li class="categorias-single" data-filter=".azucarados">Azucarados</li>
+                        <li class="categorias-single" data-filter=".variedades">Variedades</li>
+                    </ul>
+                </div>
+
+                <!-- MUESTRAS DE PRODUCTOS -->
+                <div class="productos--cards grid">
+                    <!-------- FRUTALES -------->
+                    <article class="cards-item frutales">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/frutales-1.png" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Froot Loops Kellogs</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$2.500</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cards-item frutales">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/frutales-2.png" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Fruity Pebbles Post</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$3.000</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cards-item frutales">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/frutales-3.png" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Trix Nestlé</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$1.890</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-------- INTEGRALES -------->
+                    <article class="cards-item integrales">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/integrales-1.jpg" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Quadritos Quaker</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$2.500</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cards-item integrales">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/integrales-2.jpg" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Fitness almendra</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$1.890</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cards-item integrales">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/integrales-3.jpg" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Kellogs frutos rojos</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$3.200</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-------- CHOCOLATADOS -------->
+                    <article class="cards-item chocolatados">
+                            <div class="item-forma">
+                                <img src="imagenes/productos-cereales/chocolatado-1.jpg" class="item--imagen">
+                                <div class="item--tag">
+                                    <i class='bx bxs-star'></i>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+    
+                            <div class="item-data">
+                                <div class="item-data__textos">
+                                    <h2 class="item--nombre">Cookie Crisp Nestlé</h2>
+                                </div>
+                                <div class="item-data__valor">
+                                    <h3 class="item--precio">$2.150</h3>
+                                    <button class="btn-card button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                    </article>
+
+                    <article class="cards-item chocolatados">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/chocolatado-2.jpg" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Mono Roll Costa</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$1.990</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cards-item chocolatados">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/chocolatado-3.jpg" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Cola Cao Pillows</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$2.560</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-------- AZUCARADOS -------->
+                    <article class="cards-item azucarados">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/azucarados-1.jpg" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Zucaritas Kellogs</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$2.150</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cards-item azucarados">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/azucarados-2.jpg" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Zucosos Nestlé</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$2.000</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cards-item azucarados">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/azucarados-3.jpg" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Cheerios Nestlé</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$1.890</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-------- VER MÁS -------->
+                    <article class="cards-item variedades">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/mas-1.jpg" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Chocapic Nestlé</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$1.990</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cards-item variedades">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/mas-2.jpg" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Choco Krispis Kellogs</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$3.100</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cards-item variedades">
+                        <div class="item-forma">
+                            <img src="imagenes/productos-cereales/mas-3.jpg" class="item--imagen">
+                            <div class="item--tag">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+
+                        <div class="item-data">
+                            <div class="item-data__textos">
+                                <h2 class="item--nombre">Estrellitas Nestlé</h2>
+                            </div>
+                            <div class="item-data__valor">
+                                <h3 class="item--precio">$1.790</h3>
+                                <button class="btn-card button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- BOTÓN DE VER MÁS PRODUCTOS -->
+                <div class="productos--mas">
+                    <button class="btn-productos button">
+                        Ver Más Productos
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-------- FIN PRODUCTOS --------->
     </main>
+    <!-------- FOOTER --------->
+    <footer class="footer">
+        <div class="footer-contenedor container">
+            <img src="imagenes/logo-black.png" class="footer--logo">
 
+            <div class="footer-contenido grid">
+
+                <div class="footer--info">
+                    <h3 class="footer--info-subtitulo">Servicios</h3>
+                    <ul class="footer--info-categorias">
+                        <li class="footer--info-items">Fácil de Pedir</li>
+                        <li class="footer--info-items">Envío Fugaz</li>
+                        <li class="footer--info-items">Mejor Calidad</li>
+                        <li class="footer--info-items">A la puerta de tu casa</li>
+                        <li class="footer--info-items">Abiertos 24/7</li>
+                        <li class="footer--info-items">Grandes Descuentos</li>
+                    </ul>
+                </div>
+
+                <div class="footer--info">
+                    <h3 class="footer--info-subtitulo">Nosotros</h3>
+                    <ul class="footer--info-categorias">
+                        <li class="footer--info-items">Home</li>
+                        <li class="footer--info-items">Conócenos</li>
+                        <li class="footer--info-items">Empresas</li>
+                        <li class="footer--info-items">Tienda</li>
+                        <li class="footer--info-items">Contacto</li>
+                    </ul>
+                </div>
+
+                <div class="footer--info">
+                    <h3 class="footer--info-subtitulo">Háblanos</h3>
+                    <div class="footer--iconos">
+                        <div class="footer--info-iconos">
+                            <i class='bx bxs-envelope'></i>
+                            <p class="footer--info-items">cereal@gmail.com</p>
+                        </div>
+                        <div class="footer--info-iconos">
+                            <i class='bx bxs-phone-call'></i>
+                            <p class="footer--info-items">+569 0000 0000</p>
+                        </div>
+                        <div class="footer--info-iconos">
+                            <i class='bx bxs-been-here'></i>
+                            <p class="footer--info-items">Calle Wallaby 42 Sydney</p>
+                        </div>
+                    </div>
+                </div> 
+  
+            </div>
+            <div class="footer-redes">
+                <ul class="footer--plataformas">
+
+                    <a href="" class="footer--redes-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="" class="footer--redes-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+
+                    <a href="" class="footer--redes-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+
+                    <a href="" class="footer--redes-link">
+                        <i class='bx bxl-dribbble'></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     
-
+    <script src="js/mixitup.min.js"></script>
     <!-------- JAVASCRIPT -------->
     <script src="js/script.js"></script>
 </body>

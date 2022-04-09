@@ -23,3 +23,25 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click',linkAction))
+
+
+// BOTONES DE FILTRAR PRODUCTOS (CÓDIGO EXTERNO)
+var mixerProducts = mixitup('.productos--cards', {
+    selectors: {
+        target: '.cards-item'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+mixerProducts.filter('.frutales');
+
+const linkProducts = document.querySelectorAll('.categorias-single')
+
+function activeProducts(){
+    linkProducts.forEach(l=> l.classList.remove('active-product'));
+    this.classList.add('active-product');
+}
+
+linkProducts.forEach(l=> l.addEventListener('click', activeProducts));
