@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>justcereal.com/perfil</title>
+
+    <link rel="shortcut icon" href="imagenes/favicon.png">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/media-query.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header-home">
+        <nav class="nav container">
+            <a href="/index.html" class="nav-logo">
+                <img src="imagenes/logo-black.png" >
+            </a>
+            <!-- MENU DE CATEGORÍAS -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-categorias">
+                    <li class="nav-tema">
+                        <a href="/index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-tema">
+                        <a href="#conócenos" class="nav-link">Conócenos</a>
+                    </li>
+                    <li class="nav-tema">
+                        <a href="#empresas" class="nav-link">Empresas</a>
+                    </li>
+                    <li class="nav-tema">
+                        <a href="#tienda" class="nav-link">Tienda</a>
+                    </li>
+                    <li class="nav-tema">
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+
+                <!-- CERRAR MENU EN MOBILE -->
+                <div class="nav-cerrar" id="nav-cerrar">
+                    <i class='bx bx-x'></i>
+                </div>
+
+            <!-- INTERACCIONES TIPO ECOMMERCE -->
+            </div>
+            <div class="nav-acciones">
+                <ul class="nav-tienda">
+
+                    <li class="nav-toggle" id="nav-toggle">
+                        <i class='bx bx-menu'></i>
+                        <a href="hamburger" class="nav-service"></a>
+                    </li>
+
+                    <li class="nav-iconos">
+                        <a href="#carrito" class="nav-service">
+                            <i class='bx bxs-shopping-bag-alt' ></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-iconos">
+                        <a href="/perfil.html" class="nav-service">
+                            <i class='bx bxs-user'></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="login">
+
+        <!-- SECCIÓN DE FORMULARIO USUARIO -->
+        <section class="perfil section" id="perfil">
+            <div class="perfil--contenido">
+                <div class="img-perfil">
+                    <img src="imagenes/imagen-cereal2.png" alt="">
+                </div>
+                <div class="perfil-container container">
+                    <h1 class="title--perfil">
+                        Conviértete en
+                        <br/> fan del cereal
+                    </h1>
+                    <div class="loginForm">
+                        <input type="email" placeholder="Email" id="email" required/>
+                        <input type="password" placeholder="Contraseña" id="password" minlength="8" required />
+                        <p id="helperMessage" class="helperMessage invisible">
+                            <span style="font-weight: 900;">
+                                Oops, Cheerios!
+                            </span> 
+                            <br>
+                            Parece que tus credenciales están incorrectas.
+                            <br> 
+                            Inténtalo de nuevo.
+                        </p>
+                        <button class="btn-home" onclick="login()">Ingresar</button>
+                        <a href="#">Olvidaste tu contraseña?</a>
+                    </div>
+                    <h1 id="successMessage" class="successMessage invisible">Ahora eres un fan! 🥣 </h1>
+                </div> 
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="js/script-perfil.js"></script>
+    <script src="js/script.js"></script>
+
+    
+</body>
+</html>

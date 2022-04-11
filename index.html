@@ -12,6 +12,7 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media-query.css">
 
 
 </head>
@@ -19,14 +20,14 @@
     <!--------- HEADER --------->
     <header class="header-home">
         <nav class="nav container">
-            <a href="#" class="nav-logo">
-                <img src="imagenes/logo-black.png" href="index.html">
+            <a href="/index.html" class="nav-logo">
+                <img src="imagenes/logo-black.png" >
             </a>
             <!-- MENU DE CATEGORÍAS -->
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-categorias">
                     <li class="nav-tema">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="/index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-tema">
                         <a href="#conócenos" class="nav-link">Conócenos</a>
@@ -58,13 +59,15 @@
                     </li>
 
                     <li class="nav-iconos">
-                        <i class='bx bxs-shopping-bag-alt' ></i>
-                        <a href="#carrito" class="nav-service"></a>
+                        <a href="#carrito" class="nav-service">
+                            <i class='bx bxs-shopping-bag-alt' ></i>
+                        </a>
                     </li>
 
                     <li class="nav-iconos">
-                        <i class='bx bxs-user'></i>
-                        <a href="#perfil" class="nav-service"></a>
+                        <a href="/perfil.html" class="nav-service">
+                            <i class='bx bxs-user'></i>
+                        </a>
                     </li>
 
                 </ul>
@@ -103,7 +106,7 @@
                     <img src="imagenes/extras/star-yellow.png" class="star-yellow__home">
                 </div>
 
-                <div class="banner-imagen container">
+                <div class="banner-imagen">
                    <!-- SECCIÓN DE CANTIDAD DE VISITAS -->
                     <div class="banner-logros">
                         <hgroup class="banner-logros__grupo">
@@ -121,10 +124,10 @@
                     </div>
                     <!-- IMAGEN DEL BANNER -->
                     <img src="imagenes/header-banner.png" class="banner-picture">
-
-               </div>
-
+                      
+                </div>   
             </div>
+            
         </section>
         <!-------- FIN BANNER HOME --------->
 
@@ -582,7 +585,32 @@
     <!-------- FOOTER --------->
     <footer class="footer">
         <div class="footer-contenedor container">
-            <img src="imagenes/logo-black.png" class="footer--logo">
+            
+            <div class="footer-contenido--logored">
+                <img src="imagenes/logo-black.png" class="footer--logo">
+    
+                <div class="footer-redes">
+                    <ul class="footer--plataformas">
+    
+                        <a href="" class="footer--redes-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+    
+                        <a href="" class="footer--redes-link">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+    
+                        <a href="" class="footer--redes-link">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+    
+                        <a href="" class="footer--redes-link">
+                            <i class='bx bxl-dribbble'></i>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
 
             <div class="footer-contenido grid">
 
@@ -627,26 +655,6 @@
                     </div>
                 </div> 
   
-            </div>
-            <div class="footer-redes">
-                <ul class="footer--plataformas">
-
-                    <a href="" class="footer--redes-link">
-                        <i class='bx bxl-facebook'></i>
-                    </a>
-
-                    <a href="" class="footer--redes-link">
-                        <i class='bx bxl-twitter'></i>
-                    </a>
-
-                    <a href="" class="footer--redes-link">
-                        <i class='bx bxl-linkedin'></i>
-                    </a>
-
-                    <a href="" class="footer--redes-link">
-                        <i class='bx bxl-dribbble'></i>
-                    </a>
-                </ul>
             </div>
         </div>
     </footer>
